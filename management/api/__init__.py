@@ -2,11 +2,11 @@ from flask import Blueprint
 from management import models
 # from management.models import Permission
 
-home = Blueprint('home', __name__)
+route_api = Blueprint('api_page', __name__)
 
-from . import forms, views, errors
+from management.api.api import  *
 
 #
-# @home.app_context_processor
+# @route_api.app_context_processor
 # def inject_permissions():
 #     return dict(Permission=Permission)

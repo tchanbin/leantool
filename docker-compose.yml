@@ -50,7 +50,7 @@ services:
           '--default-time-zone=+08:00'                    #设置mysql数据库的 时区问题！！！！ 而不是设置容器的时区问题！！！！
     ]
     volumes:
-      - "D:/docker/mysql/data:/var/lib/mysql"
+      - "/var/lib/mysql:/var/lib/mysql"
      # - "D:/docker/mysql/localtime:/etc/localtime"
       
     networks:

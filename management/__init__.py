@@ -9,7 +9,6 @@ from flask_pagedown import PageDown
 from config import config
 import flask_excel as excel
 
-
 bootstrap = Bootstrap()
 moment = Moment()
 db = SQLAlchemy()
@@ -37,6 +36,10 @@ def create_app(config_name):
 
     from .home import home as blueprint_home
     app.register_blueprint(blueprint_home)
+
+    from .api import route_api as blueprint_api
+    app.register_blueprint(blueprint_api, url_prefix="/api")
+
 
     from .admin import admin as blueprint_admin
     app.register_blueprint(blueprint_admin, url_prefix="/admin")

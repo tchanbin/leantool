@@ -13,8 +13,7 @@ migrate = Migrate(app, db)
 
 @app.shell_context_processor
 def make_shell_context():
-    return dict(app=current_app, db=db, User=User, Role=Role, Permission=Permission, CarList=CarList,
-                CarProcedureInfo=CarProcedureInfo, ProcedureList=ProcedureList)
+    return dict(app=current_app, db=db, S1Data=S1Data,S4Data=S4Data, )
 
 
 manager.add_command("shell", Shell(make_context=make_shell_context))
