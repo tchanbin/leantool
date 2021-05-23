@@ -21,7 +21,7 @@ class DevelopmentConfig(Config):
 
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:11111111@172.18.0.3:3306/management2.0"
+    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:11111111@172.19.0.3:3306/wechat"
 
     @classmethod
     def init_app(cls, app):
