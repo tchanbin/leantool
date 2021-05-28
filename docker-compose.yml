@@ -3,7 +3,7 @@ version: "3"
 services:
   
   flask:
-    image: daocloud.io/tchanbin/leantool:3.0.7
+    image: daocloud.io/tchanbin/leantool:3.0.8
 #    image: daocloud.io/tchanbin/gzdhd:2.3.7
     #image: test:1.0
     ports:
@@ -15,7 +15,7 @@ services:
     #]
     networks:
      default:
-       ipv4_address: 172.18.0.4
+       ipv4_address: 172.18.0.2
     depends_on:
       - mysql
     restart: always
@@ -51,8 +51,8 @@ services:
           '--default-time-zone=+08:00'                    #设置mysql数据库的 时区问题！！！！ 而不是设置容器的时区问题！！！！
     ]
     volumes:
-#      - "/var/lib/mysql:/var/lib/mysql"
-      - "D:/docker/mysql/data:/var/lib/mysql"
+      - "/root/mysql:/var/lib/mysql"
+#      - "D:/docker/mysql/data:/var/lib/mysql"
      # - "D:/docker/mysql/localtime:/etc/localtime"
 
     networks:
