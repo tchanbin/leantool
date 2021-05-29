@@ -3,7 +3,7 @@ version: "3"
 services:
   
   flask:
-    image: daocloud.io/tchanbin/leantool:3.0.10
+    image: daocloud.io/tchanbin/leantool:3.0.12
 #    image: daocloud.io/tchanbin/gzdhd:2.3.7
     #image: test:1.0
     ports:
