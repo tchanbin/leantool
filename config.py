@@ -24,7 +24,7 @@ class DevelopmentConfig(Config):
 
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:11111111@172.18.0.3:3306/wechat"
+    SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:11111111@172.19.0.3:3306/wechat"
     # SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root:11111111@42.192.213.181:4306/wechat"
 
     @classmethod

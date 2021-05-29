@@ -3,7 +3,7 @@ version: "3"
 services:
   
   flask:
-    image: daocloud.io/tchanbin/leantool:3.0.9
+    image: daocloud.io/tchanbin/leantool:3.0.10
 #    image: daocloud.io/tchanbin/gzdhd:2.3.7
     #image: test:1.0
     ports:
@@ -15,7 +15,7 @@ services:
     #]
     networks:
      default:
-       ipv4_address: 172.18.0.2
+       ipv4_address: 172.19.0.2
     depends_on:
       - mysql
     restart: always
@@ -57,7 +57,7 @@ services:
 
     networks:
       default:
-        ipv4_address: 172.18.0.3
+        ipv4_address: 172.19.0.3
     restart: always
 
 networks:

@@ -124,7 +124,8 @@ def s1hanJie():
     resp = {"code": 200, "msg": "初始化", "data": {}, "errno": 0}
     req = json.loads(request.get_data())
     openid = req["openid"]
-    s1data = S1Data.query.filter_by(openid=openid).first()
+    # s1data = S1Data.query.filter_by(openid=openid).first()
+    s1data = S1Data.query.filter_by(openid="oZcf_4_i7wqNzFBdlTmyucm4XGYs").first()
     if s1data:
         # for data in req["data"]:
         #     name=data["name"]
